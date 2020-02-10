@@ -43,13 +43,23 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 const links = document.querySelectorAll("nav a");
 
-links.forEach(link => link.style.color = "gray");
+links.forEach(link => link.style.color = "green");
 links[0].textContent = siteContent.nav["nav-item-1"];
 links[1].textContent = siteContent.nav["nav-item-2"];
 links[2].textContent = siteContent.nav["nav-item-3"];
 links[3].textContent = siteContent.nav["nav-item-4"];
 links[4].textContent = siteContent.nav["nav-item-5"];
 links[5].textContent = siteContent.nav["nav-item-6"];
+
+const newNav1 = document.createElement("a");
+newNav1.textContent = "Nav1";
+const firstNav = document.querySelector("nav");
+firstNav.prepend(newNav1);
+const newNav2 = document.createElement("a");
+newNav2.textContent = "Nav2";
+const lastNav = document.querySelector("nav");
+lastNav.append(newNav2);
+
 
 
 let headerOne = document.querySelector("h1");
