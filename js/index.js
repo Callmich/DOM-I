@@ -68,9 +68,20 @@ const topH4s = document.querySelectorAll(".top-content h4");
 topH4s[0].textContent = siteContent["main-content"]["features-h4"];
 topH4s[1].textContent = siteContent["main-content"]["about-h4"];
 
+const topPs = document.querySelectorAll(".top-content p");
+topPs[0].textContent = siteContent["main-content"]["features-content"];
+topPs[1].textContent = siteContent["main-content"]["about-content"];
+
+let longCode = document.querySelector("#middle-img");
+longCode.src = "img/mid-page-accent.jpg"
 
 
 const botH4s = document.querySelectorAll(".bottom-content h4");
 botH4s[0].textContent = siteContent["main-content"]["services-h4"];
 botH4s[1].textContent = siteContent["main-content"]["product-h4"];
 botH4s[2].textContent = siteContent["main-content"]["vision-h4"];
+
+const botPs = document.querySelectorAll(".bottom-content p");
+botPs[0].textContent = siteContent["main-content"]["services-content"];
+botPs[1].textContent = siteContent["main-content"]["product-content"];
+botPs[2].textContent = siteContent["main-content"]["vision-content"];
