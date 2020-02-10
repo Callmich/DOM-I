@@ -71,9 +71,6 @@ button1.textContent = siteContent.cta["button"];
 let codeSnip = document.getElementById("cta-img");
 codeSnip.src = "img/header-img.png"
 
-// let callToAction = document.getElementsByClassName("cta");
-// callToAction.style.borderBottom = "solid black 1px"
-
 const topH4s = document.querySelectorAll(".top-content h4");
 topH4s[0].textContent = siteContent["main-content"]["features-h4"];
 topH4s[1].textContent = siteContent["main-content"]["about-h4"];
@@ -105,4 +102,14 @@ contAddy[1].textContent = siteContent["contact"]["phone"];
 contAddy[2].textContent = siteContent["contact"]["email"];
 
 const foot = document.querySelector("footer");
-foot.textContent = siteContent["footer"]["copyright"]
+foot.textContent = siteContent["footer"]["copyright"];
+foot.style.color = "blue"; //making the footer blue
+foot.style.fontWeight = "bold"; //making the footer bold
+foot.style.border = "solid 1px green"; //giving the footer a border
+
+const allMCHead = document.querySelectorAll(".main-content h4");
+allMCHead.forEach(headers4 =>{
+  headers4.style.fontSize = "4rem";
+  headers4.style.color = "red";
+}) //I problaly could have attached this section via this method for outlining the content. Check with Anthony tomorrow.
+
