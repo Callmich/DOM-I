@@ -52,8 +52,15 @@ links[4].textContent = siteContent.nav["nav-item-5"];
 links[5].textContent = siteContent.nav["nav-item-6"];
 
 
-let headerOne = document.getElementsByTagName('h1');
-headerOne.textContent = 'DOM';
+let headerOne = document.querySelector("h1");
+headerOne.textContent = siteContent.cta["h1"];
+
+let button1 = document.querySelector("button");
+button1.textContent = siteContent.cta["button"];
+
+let codeSnip = document.getElementById("cta-img");
+codeSnip.src = "img/header-img.png"
+
 
 
 
