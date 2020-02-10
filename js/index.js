@@ -85,3 +85,14 @@ const botPs = document.querySelectorAll(".bottom-content p");
 botPs[0].textContent = siteContent["main-content"]["services-content"];
 botPs[1].textContent = siteContent["main-content"]["product-content"];
 botPs[2].textContent = siteContent["main-content"]["vision-content"];
+
+const contH4 = document.querySelector(".contact h4");
+contH4.textContent = siteContent["contact"]["contact-h4"];
+
+const contAddy = document.querySelectorAll(".contact p");
+contAddy[0].textContent = siteContent["contact"]["address"];
+contAddy[1].textContent = siteContent["contact"]["phone"];
+contAddy[2].textContent = siteContent["contact"]["email"];
+
+const foot = document.querySelector("footer");
+foot.textContent = siteContent["footer"]["copyright"]
