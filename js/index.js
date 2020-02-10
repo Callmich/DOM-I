@@ -61,6 +61,16 @@ button1.textContent = siteContent.cta["button"];
 let codeSnip = document.getElementById("cta-img");
 codeSnip.src = "img/header-img.png"
 
+// let callToAction = document.getElementsByClassName("cta");
+// callToAction.style.borderBottom = "solid black 1px"
+
+const topH4s = document.querySelectorAll(".top-content h4");
+topH4s[0].textContent = siteContent["main-content"]["features-h4"];
+topH4s[1].textContent = siteContent["main-content"]["about-h4"];
 
 
 
+const botH4s = document.querySelectorAll(".bottom-content h4");
+botH4s[0].textContent = siteContent["main-content"]["services-h4"];
+botH4s[1].textContent = siteContent["main-content"]["product-h4"];
+botH4s[2].textContent = siteContent["main-content"]["vision-h4"];
